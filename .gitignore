@@ -2,12 +2,14 @@
 .idea
 .DS_Store
 .sass-cache
+package-lock.json
 
 ## Directories
 log/
 dist/
 node_modules/
 bower_components/
+
 
 ## Files
 result.xml

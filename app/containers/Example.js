@@ -6,11 +6,9 @@ const IconButton = styled(Button)`
   margin: 0 -11px;
   border: 0px !important;
 `
-
 const MarginRow = styled(Row)`
   margin-bottom: 12px;
 `
-
 export default () => (
   <Row
     style={{
@@ -33,10 +31,7 @@ export default () => (
             addonAfter={<IconButton size="small" icon="copy" />}
           />
         </MarginRow>
-       
       </Card>
-
-      
     </Col>
   </Row>
 )

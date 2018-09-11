@@ -9,7 +9,8 @@ const dirNode = 'node_modules';
 const dirApp = path.join(__dirname, 'app');
 const dirAssets = path.join(__dirname, 'assets');
 
-const appHtmlTitle = 'Webpack Boilerplate';
+const appHtmlTitle = 'React Boilerplate';
+const packageJSON = require("./package.json");
 
 /**
  * Webpack Configuration
@@ -29,7 +30,7 @@ module.exports = {
         ],
         extensions: ['.js', '.jsx'],
         alias: {
-            js: path.join(__dirname, './app/js'),
+            app: path.join(__dirname, './app'),
             assets: path.join(__dirname, './assets'),
             components: path.join(__dirname, './app/components'),
             containers: path.join(__dirname, './app/containers')
@@ -37,7 +38,8 @@ module.exports = {
     },
     plugins: [
         new webpack.DefinePlugin({
-            IS_DEV: IS_DEV
+            IS_DEV: IS_DEV,
+            GIT_HOMEPAGE: JSON.stringify(packageJSON.homepage)
         }),
 
         new HtmlWebpackPlugin({

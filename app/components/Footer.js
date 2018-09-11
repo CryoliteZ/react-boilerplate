@@ -7,8 +7,9 @@ export default () => (
         textAlign: 'center',
         position: 'fixed',
         bottom: 0,
-        width: '100%'
+        width: '100%',
+        padding: '10px 50px'
     }}>
-    <a href="https://github.com/CryoliteZ/react-boilerplate" style={{color: 'rgba(0, 0, 0, 0.65)'}}><Icon type="github" theme="outlined"  /> CryoliteZ  ©2018 </a> 
+    <a href={GIT_HOMEPAGE} style={{color: 'rgba(0, 0, 0, 0.65)'}}><Icon type="github" theme="outlined"  /> CryoliteZ  ©2018 </a> 
     </Footer>
 )

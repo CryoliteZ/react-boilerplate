@@ -37,5 +37,3 @@ $ npm run build
 
 ## License
 [MIT License](LICENSE)
-
-Original work: [cvgellhorn/webpack-boilerplate](https://github.com/cvgellhorn/webpack-boilerplate)
